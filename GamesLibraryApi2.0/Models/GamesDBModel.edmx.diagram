@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="849e6146d2704f319b24eab55030e780" Name="Diagram1">
+        <EntityTypeShape EntityType="GamesDBModel.Developer" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GamesDBModel.GameDeveloper" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GamesDBModel.Game" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GamesDBModel.Publisher" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GamesDBModel.Studio" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="GamesDBModel.FK_GameDevelopers_Developers_DeveloperId" ManuallyRouted="false" />
+        <AssociationConnector Association="GamesDBModel.FK_GameDevelopers_Games_GameId" ManuallyRouted="false" />
+        <AssociationConnector Association="GamesDBModel.FK_GameDevelopers_Studios_StudioId" ManuallyRouted="false" />
+        <AssociationConnector Association="GamesDBModel.FK_Games_Publishers_PublisherId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
